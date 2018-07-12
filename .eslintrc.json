@@ -1,0 +1,13 @@
+{
+	"extends": [
+		"eslint:recommended",
+		"standard"
+	],
+	"rules": {
+		"comma-dangle": ["error", "always-multiline"],
+		"indent": ["error", "tab"],
+		"max-len": ["error", { "code": 140 }],
+		"object-curly-spacing": ["error", "always"],
+		"no-tabs": ["off"]
+	}
+}

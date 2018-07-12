@@ -1,0 +1,40 @@
+{
+  "name": "@player1os/javascript-support",
+  "version": "1.0.0",
+  "description": "A base configuration for javascript projects",
+  "private": false,
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org"
+  },
+  "scripts": {
+    "preversion": "git checkout master && git pull && npm i",
+    "postversion": "git push --all && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Player1os/javascript-support.git"
+  },
+  "keywords": [
+    "javascript",
+    "eslint",
+    "config"
+  ],
+  "author": "Osama Hassanein <player1os@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Player1os/javascript-support/issues"
+  },
+  "homepage": "https://github.com/Player1os/javascript-support/#readme",
+  "engines": {
+    "node": "^10.6.0",
+    "npm": "^6.1.0"
+  },
+  "dependencies": {
+    "eslint": "^5.1.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0"
+  }
+}
