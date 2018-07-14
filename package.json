@@ -1,6 +1,6 @@
 {
   "name": "@player1os/javascript-support",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A base configuration for javascript projects",
   "private": false,
   "publishConfig": {
