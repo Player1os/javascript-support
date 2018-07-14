@@ -7,8 +7,7 @@
     "registry": "http://registry.npmjs.org"
   },
   "scripts": {
-    "preversion": "git checkout master && git pull && npm i",
-    "postversion": "git push --all -f && git push --tags -f && npm publish"
+    "test": "eslint ."
   },
   "repository": {
     "type": "git",
