@@ -20,7 +20,7 @@
     "config"
   ],
   "author": "Osama Hassanein <player1os@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Player1os/javascript-support/issues"
   },
