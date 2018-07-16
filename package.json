@@ -10,8 +10,8 @@
     "support-require": "./lib/require.js"
   },
   "scripts": {
-    "preversion": "node lib/require.js ./preversion",
-    "postversion": "node lib/require.js ./postversion",
+    "preversion": "node lib/require.js ./version/pre",
+    "postversion": "node lib/require.js ./version/post",
     "test": "eslint ."
   },
   "repository": {
