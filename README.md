@@ -96,6 +96,12 @@ when the template is modified:
 		git tag -af TAG_NAME NEW_COMMIT_HASH
 		```
 
+	1. Ensures any new dependencies are installed, by running:
+
+		```
+		npm i
+		```
+
 	1. Execute garbage collection upon the repository, by running:
 
 		```
@@ -139,6 +145,12 @@ when the template is modified:
 
 		```
 		git fetch --tags -p
+		```
+
+	1. Ensures any new dependencies are installed, by running:
+
+		```
+		npm i
 		```
 
 	1. Execute garbage collection upon the repository, by running:
