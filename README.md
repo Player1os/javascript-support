@@ -5,9 +5,9 @@
 [![GitHub tag](https://img.shields.io/github/tag/Player1os/javascript-support.svg?label=version)](https://github.com/Player1os/javascript-support/releases)
 [![Build Status](https://travis-ci.org/Player1os/javascript-support.svg?branch=master)](https://travis-ci.org/Player1os/javascript-support)
 
-A base configuration for Javascript projects.
+A set of common utilities and scripts to be used in the development of projects written in Javascript.
 
-Provides the following development assets:
+This project provides the following development assets:
 
 - `.eslintrc.json` - a common linter configuration file for *eslint*.
 - `lib/version/pre.js` - a script that is executed *before* the project's version is to be updated:
@@ -146,5 +146,3 @@ when the template is modified:
 		```
 		git gc
 		```
-
-This project also contains some common utilities that can be reused in other similar support packages.
