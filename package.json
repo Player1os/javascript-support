@@ -7,12 +7,11 @@
     "registry": "http://registry.npmjs.org"
   },
   "bin": {
-    "support-require": "./lib/require.js"
+    "support-require": "./lib/runtime/task.js"
   },
   "scripts": {
-    "preversion": "node lib/require.js ./version/pre",
-    "postversion": "node lib/require.js ./version/post",
-    "test": "eslint ."
+    "preversion": "node lib/runtime/task.js ./version/pre",
+    "postversion": "node lib/runtime/task.js ./version/post"
   },
   "repository": {
     "type": "git",
@@ -34,12 +33,14 @@
     "npm": "^6.1.0"
   },
   "dependencies": {
+    "bluebird": "^3.5.1",
     "colors": "^1.3.0",
     "eslint": "^5.1.0",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.8.0",
-    "eslint-plugin-standard": "^3.1.0"
+    "eslint-plugin-standard": "^3.1.0",
+    "module-alias": "^2.1.0"
   }
 }
