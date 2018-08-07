@@ -1,9 +1,9 @@
 import * as format from './format'
 import * as packageConfiguration from './package_configuration'
-import * as spawnChildProcessAsync from './spawn_child_process_async'
+import * as spawnChildProcess from './spawn_child_process'
 
 export {
 	format,
 	packageConfiguration,
-	spawnChildProcessAsync,
+	spawnChildProcess,
 }
