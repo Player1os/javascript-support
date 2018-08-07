@@ -1,11 +1,11 @@
 // Load local modules.
-const common = require('.../lib')
+const { spawnChildProcess } = require('.../lib')
 
 // Load node modules.
 const path = require('path')
 
 // Store the piped async child process function.
-const spawnPipedChildProcessAsync = common.spawnChildProcessAsync.piped
+const spawnChildProcessPiped = spawnChildProcess.piped
 
 // Load the test runtime.
 beforeAll(() => {
@@ -33,8 +33,7 @@ test('Ordinary async function with callback', async () => {
 })
 
 test('Async function with error', async () => {
-	const result = await spawnPipedChildProcessAsync(
-		'TEST RUN', 'node', [path.join(__dirname, 'never_ending_application.js')], true)
+	const result = await spawnChildProcessPiped('TEST RUN', 'node', [path.join(__dirname, 'never_ending_application.js')], true)
 
 	expect(result.statusCode).toBe(1)
 })
@@ -53,8 +52,7 @@ test('Async function with error and callback', async () => {
 })
 
 test('Nested async function with error', async () => {
-	const result = await spawnPipedChildProcessAsync(
-		'TEST RUN', 'node', [path.join(__dirname, 'nested_never_ending_application.js')], true)
+	const result = await spawnChildProcessPiped('TEST RUN', 'node', [path.join(__dirname, 'nested_never_ending_application.js')], true)
 
 	expect(result.statusCode).toBe(1)
 })

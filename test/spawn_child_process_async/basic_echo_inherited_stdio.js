@@ -2,10 +2,10 @@
 require('../../lib/runtime')
 
 // Load local modules.
-const common = require('.../lib')
+const { spawnChildProcess } = require('.../lib')
 
 // Spawn a process with inherited stdio.
-common.spawnChildProcessAsync.inherited('TEST RUN', 'echo', ['Hello world!'])
+spawnChildProcess.inherited('TEST RUN', 'echo', ['Hello world!'])
 	.catch((err) => {
 		process.nexTick(() => {
 			throw err
