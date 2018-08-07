@@ -7,11 +7,12 @@
     "registry": "http://registry.npmjs.org"
   },
   "bin": {
-    "support-require": "./lib/runtime/task.js"
+    "support-require": "lib/runtime/task.js"
   },
   "scripts": {
-    "preversion": "node lib/runtime/task.js ./version/pre",
-    "postversion": "node lib/runtime/task.js ./version/post"
+    "preversion": "node lib/runtime/task.js ../task/preversion",
+    "postversion": "node lib/runtime/task.js ../task/postversion",
+    "test": "eslint ."
   },
   "repository": {
     "type": "git",
