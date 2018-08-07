@@ -1,0 +1,6 @@
+{
+	"statusCode": 1,
+	"killSignal": null,
+	"stdout": "I_am_trying",
+	"stderr": "I_have_failed"
+}

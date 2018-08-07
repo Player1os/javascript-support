@@ -6,13 +6,14 @@
   "publishConfig": {
     "registry": "http://registry.npmjs.org"
   },
+  "main": "lib/index.js",
   "bin": {
     "support-require": "lib/runtime/task.js"
   },
   "scripts": {
     "preversion": "node lib/runtime/task.js ../task/preversion",
     "postversion": "node lib/runtime/task.js ../task/postversion",
-    "test": "eslint ."
+    "test": "eslint . && jest"
   },
   "repository": {
     "type": "git",
@@ -43,5 +44,14 @@
     "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-standard": "^3.1.0",
     "module-alias": "^2.1.0"
+  },
+  "devDependencies": {
+    "jest": "^23.4.2"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^\\.\\.\\.(.*)": "<rootDir>$1"
+    },
+    "testEnvironment": "node"
   }
 }
