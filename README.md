@@ -158,3 +158,78 @@ when the template is modified:
 		```
 		git gc
 		```
+
+## JS NPM Package Support
+
+"description": "A set of common utilities and scripts to be used in the development of an NPM package projects written in Javascript",
+
+[![License](https://img.shields.io/github/license/Player1os/js-npm-package-support.svg)](https://github.com/Player1os/js-npm-package-support/blob/master/LICENSE)
+[![NodeJS version](https://img.shields.io/node/v/@player1os/js-npm-package-support.svg?label=node%20version)](https://nodejs.org/dist/v10.6.0/)
+[![GitHub tag](https://img.shields.io/github/tag/Player1os/js-npm-package-support.svg?label=version)](https://github.com/Player1os/js-npm-package-support/releases)
+[![Build Status](https://travis-ci.org/Player1os/js-npm-package-support.svg?branch=master)](https://travis-ci.org/Player1os/js-npm-package-support)
+
+A set of common utilities and scripts to be used in the development of NPM package projects written in Javascript.
+
+This project provides the following development assets:
+
+- `lib/test.js` - a script that is intended as the project's *test* task script:
+
+	1. Execute the *eslint* linter, by running:
+
+		```
+		eslint .
+		```
+
+	1. Determine whether the current project contains any tests, by verifying the existence of the `./test` directory.
+
+	1. If the current project is found to contain tests, execute the *jest* test runner, by running:
+
+		```
+		jest
+		```
+
+This project inherits development assets from the following projects:
+
+- [@player1os/javascript-support](https://github.com/Player1os/javascript-support)
+
+## NodeJS Execute Async Function
+
+"description": "A small library that streamlines the direct execution of async functions",
+
+A small library that streamlines the direct execution of async functions
+
+There are three benefits that come from using this library:
+1. The passed async function is immediatly executed.
+1. If the async function fails and no callback is supplied, the error will be thrown outside of the function. This will result in
+an `UncaughtExecption` instead of an `UnhandledRejection`. In my usecase, having the application crash on error is preferred.
+1. The async function is executed outside of the context of any enclosing async function, thus errors are not caught by the
+enclosing function.
+
+It is possible to supply a callback which is executed after the async function is finished. The callback follows the classic nodejs
+parameter convention `(err: Error | null, result: any)`
+
+## NodeJS Spawn Process Async
+
+"description": "A promise wrapper of the standard Node.js library for spawning a process",
+
+A promise wrapper of the standard Node.js library for spawning a process.
+
+```javascript
+const { default: spawnProcessAsync } = require('@player1os/spawn-process-async')
+
+const result = await spawnProcessAsync('echo', ['"Hello World!"'])
+
+console.log(result.outStreamData) // outputs: Hello World!
+```
+
+The implementation is designed similarly to `childProcess.spawnSync` in that it does not allow any interaction with the spawned process
+until it has exited. The difference is that since this is an asynchronous implementation, the process does not block.
+
+The implementation forces the process to be spawned in a separate shell (which is slower, but simplifies cross-platform usage).
+
+By default the process's output and error streams are buffered and transformed to `utf-8` strings, contained in the return value. By
+setting the optional parameter `options.isStdioInherited` to `true`, the child's streams are forwarded to the parent process.
+
+Finally the function throws a `ProcessError` Error object if the process returns with a non-zero status code. This Error object contains
+information about the process. This behavior can be disabled by setting the optional parameter
+`options.isErrorOnNonZeroStatusCodeSuppressed` to `true`.
