@@ -7,6 +7,7 @@
     "registry": "http://registry.npmjs.org"
   },
   "main": "lib/index.js",
+  "types": "@types/index.d.ts",
   "bin": {
     "support-require": "lib/runtime/task.js"
   },
@@ -22,7 +23,10 @@
   "keywords": [
     "javascript",
     "eslint",
-    "config"
+    "config",
+    "spawn",
+    "process",
+    "async"
   ],
   "author": "Osama Hassanein <player1os@gmail.com>",
   "license": "MIT",
