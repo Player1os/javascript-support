@@ -1,0 +1,21 @@
+{
+	"version": "0.2.0",
+	"configurations": [{
+		"name": "[Jest] Current file",
+		"type": "node",
+		"request": "launch",
+		"program": "${workspaceFolder}\\node_modules\\jest\\bin\\jest",
+		"args": [
+			"${relativeFile}",
+			"-c", "${workspaceFolder}\\package.json"
+		],
+		"runtimeArgs": ["--nolazy"],
+		"cwd": "${workspaceRoot}",
+		"console": "integratedTerminal",
+		"internalConsoleOptions": "neverOpen",
+		"protocol": "inspector",
+		"windows": {
+			"runtimeExecutable": "C:\\Programs\\nodejs\\node",
+		}
+	}]
+}
