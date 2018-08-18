@@ -7,6 +7,6 @@ cache:
   directories:
     - "node_modules"
 
-before_install: npm i -g greenkeeper-lockfile; greenkeeper-lockfile-update
+install: npm ci || npm i
 
-after_script: greenkeeper-lockfile-upload
+after_script: git diff --quiet && git add . && git commit -m "Updated the lockfile" && git push
