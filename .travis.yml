@@ -6,3 +6,11 @@ node_js:
 cache:
   directories:
     - "node_modules"
+
+install: npm ci || npm i
+
+after_script:
+- git diff --quiet || ( \
+    git add . && git commit -m "Updated the lockfile" && \
+    git push --force-with-lease=${TRAVIS_BRANCH}:origin/${TRAVIS_BRANCH} origin HEAD:${TRAVIS_BRANCH} \
+  )
