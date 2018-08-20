@@ -164,11 +164,6 @@ when the template is modified:
 
 "description": "A set of common utilities and scripts to be used in the development of an NPM package projects written in Javascript",
 
-[![License](https://img.shields.io/github/license/Player1os/js-npm-package-support.svg)](https://github.com/Player1os/js-npm-package-support/blob/master/LICENSE)
-[![NodeJS version](https://img.shields.io/node/v/@player1os/js-npm-package-support.svg?label=node%20version)](https://nodejs.org/dist/v10.6.0/)
-[![GitHub tag](https://img.shields.io/github/tag/Player1os/js-npm-package-support.svg?label=version)](https://github.com/Player1os/js-npm-package-support/releases)
-[![Build Status](https://travis-ci.org/Player1os/js-npm-package-support.svg?branch=master)](https://travis-ci.org/Player1os/js-npm-package-support)
-
 A set of common utilities and scripts to be used in the development of NPM package projects written in Javascript.
 
 This project provides the following development assets:
