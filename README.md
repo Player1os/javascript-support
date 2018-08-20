@@ -166,7 +166,7 @@ when the template is modified:
 [![License](https://img.shields.io/github/license/Player1os/js-npm-package-support.svg)](https://github.com/Player1os/js-npm-package-support/blob/master/LICENSE)
 [![NodeJS version](https://img.shields.io/node/v/@player1os/js-npm-package-support.svg?label=node%20version)](https://nodejs.org/dist/v10.6.0/)
 [![GitHub tag](https://img.shields.io/github/tag/Player1os/js-npm-package-support.svg?label=version)](https://github.com/Player1os/js-npm-package-support/releases)
-[![Build Status](https://travis-ci.org/Player1os/js-npm-package-support.svg?branch=master)](https://travis-ci.org/Player1os/js-npm-package-support)
+[![Build Status](https://travis-ci.org/Player1os/js-npm-package-support.svg?branch=master)](https://travis-ci.org/Player1os/js-npm-package-support) [![Greenkeeper badge](https://badges.greenkeeper.io/Player1os/javascript-support.svg)](https://greenkeeper.io/)
 
 A set of common utilities and scripts to be used in the development of NPM package projects written in Javascript.
 
