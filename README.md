@@ -4,6 +4,7 @@
 [![NodeJS version](https://img.shields.io/node/v/@player1os/javascript-support.svg?label=node%20version)](https://nodejs.org/dist/v10.6.0/)
 [![GitHub tag](https://img.shields.io/github/tag/Player1os/javascript-support.svg?label=version)](https://github.com/Player1os/javascript-support/releases)
 [![Build Status](https://travis-ci.org/Player1os/javascript-support.svg?branch=master)](https://travis-ci.org/Player1os/javascript-support)
+[![Greenkeeper badge](https://badges.greenkeeper.io/Player1os/javascript-support.svg)](https://greenkeeper.io/)
 
 A set of common utilities and scripts to be used in the development of projects written in Javascript.
 
