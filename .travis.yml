@@ -9,4 +9,4 @@ cache:
 
 install: npm ci || npm i
 
-after_script: git diff --quiet && git add . && git commit -m "Updated the lockfile" && git push
+after_script: git diff --quiet || (git add . && git commit -m "Updated the lockfile" && git push)
