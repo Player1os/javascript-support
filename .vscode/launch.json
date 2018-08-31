@@ -6,8 +6,8 @@
 		"request": "launch",
 		"program": "${workspaceFolder}\\node_modules\\jest\\bin\\jest",
 		"args": [
-			"${relativeFile}",
-			"-c", "${workspaceFolder}\\package.json"
+			"-c", "${workspaceFolder}\\package.json",
+			"-i", "${relativeFile}"
 		],
 		"runtimeArgs": ["--nolazy"],
 		"cwd": "${workspaceRoot}",
