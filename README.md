@@ -1,7 +1,7 @@
 # Javascript Support
 
 [![License](https://img.shields.io/github/license/Player1os/javascript-support.svg)](https://github.com/Player1os/javascript-support/blob/master/LICENSE)
-[![NodeJS version](https://img.shields.io/node/v/@player1os/javascript-support.svg?label=node%20version)](https://nodejs.org/dist/v10.6.0/)
+[![NodeJS version](https://img.shields.io/node/v/@player1os/javascript-support.svg?label=node%20version)](https://nodejs.org/dist/v10.15.3/)
 [![GitHub tag](https://img.shields.io/github/tag/Player1os/javascript-support.svg?label=version)](https://github.com/Player1os/javascript-support/releases)
 [![Build Status](https://travis-ci.org/Player1os/javascript-support.svg?branch=master)](https://travis-ci.org/Player1os/javascript-support)
 [![Greenkeeper badge](https://badges.greenkeeper.io/Player1os/javascript-support.svg)](https://greenkeeper.io/)
