@@ -1,6 +1,6 @@
 {
   "name": "@player1os/javascript-support",
-  "version": "1.3.11",
+  "version": "1.3.12",
   "description": "A set of common utilities and scripts to be used in the development of projects written in Javascript",
   "main": "lib/index.js",
   "types": "@types/index.d.ts",
